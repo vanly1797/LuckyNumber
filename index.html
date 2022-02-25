@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Number</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-total {
+            width: 500px;
+            height: 500px;
+        }
+
+        .box-content {
+            background-color: crimson;
+            text-align: center;
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .box-number {
+            background-color: aqua;
+            height: 150px;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .box-lucky-number {
+            padding-top: 20px;
+        }
+
+        #btnClick {
+            padding: 5px 30px 5px 30px;
+            font-weight: bold;
+            background-color: chartreuse;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 2px solid #ddd;
+            box-shadow: 1px 1px 1px grey;
+        }
+
+        #inputNumber {
+            padding: 5px 30px 5px 30px;
+            text-align: center;
+            border-radius: 5px;
+            border: 2px solid #ddd;
+            box-shadow: 1px 1px 1px grey;
+        }
+
+        #result {
+            color: red;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-total">
+        <div class="box-content">
+            <span>
+                <h1>Lucky Number</h1>
+            </span>
+        </div>
+        <div class="box-number">
+            <span>Dự đoán con số của bạn nằm trong khoảng từ 1 đến 10</span>
+            <div class="box-lucky-number">
+                <input type="text" placeholder="Nhập con số bạn dự đoán" id="inputNumber" />
+                <button id="btnClick">QUAY SỐ</button>
+            </div>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
